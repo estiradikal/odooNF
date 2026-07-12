@@ -1,0 +1,31 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1783835181485,251,HTTP Request,200,OK,Cargas Ventas Odoo 1-2,text,true,,6243,279,2,2,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,98,0,1
+1783835181082,655,HTTP Request,200,OK,Cargas Ventas Odoo 1-1,text,true,,6243,279,2,2,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,429,0,22
+1783835181485,98,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-2,text,true,,709,126,2,2,http://localhost:8069/odoo/sales,98,0,1
+1783835181082,435,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-1,text,true,,709,126,2,2,http://localhost:8069/odoo/sales,429,0,22
+1783835181584,152,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-2,text,true,,5534,153,2,2,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,152,0,1
+1783835181518,219,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-1,text,true,,5534,153,2,2,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,218,0,1
+1783835181984,81,HTTP Request,200,OK,Cargas Ventas Odoo 1-3,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,45,0,1
+1783835181984,45,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-3,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,45,0,1
+1783835182029,36,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-3,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,36,0,1
+1783835182482,64,HTTP Request,200,OK,Cargas Ventas Odoo 1-4,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,27,0,1
+1783835182482,27,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-4,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,27,0,1
+1783835182510,36,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-4,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,36,0,1
+1783835182982,68,HTTP Request,200,OK,Cargas Ventas Odoo 1-5,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,26,0,1
+1783835182982,26,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-5,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,26,0,1
+1783835183008,42,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-5,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,42,0,1
+1783835183483,73,HTTP Request,200,OK,Cargas Ventas Odoo 1-6,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,32,0,2
+1783835183483,32,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-6,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,32,0,2
+1783835183516,40,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-6,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,40,0,1
+1783835183982,58,HTTP Request,200,OK,Cargas Ventas Odoo 1-7,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,22,0,1
+1783835183982,22,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-7,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,22,0,1
+1783835184005,35,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-7,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,35,0,1
+1783835184482,64,HTTP Request,200,OK,Cargas Ventas Odoo 1-8,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,26,0,1
+1783835184482,27,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-8,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,26,0,1
+1783835184509,37,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-8,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,37,0,1
+1783835184981,60,HTTP Request,200,OK,Cargas Ventas Odoo 1-9,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,20,0,1
+1783835184981,20,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-9,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,20,0,1
+1783835185001,40,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-9,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,40,0,1
+1783835185484,65,HTTP Request,200,OK,Cargas Ventas Odoo 1-10,text,true,,6243,279,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,30,0,2
+1783835185484,30,HTTP Request-0,303,SEE OTHER,Cargas Ventas Odoo 1-10,text,true,,709,126,1,1,http://localhost:8069/odoo/sales,30,0,2
+1783835185514,35,HTTP Request-1,200,OK,Cargas Ventas Odoo 1-10,text,true,,5534,153,1,1,http://localhost:8069/web/login?redirect=%2Fodoo%2Fsales%3F,35,0,1

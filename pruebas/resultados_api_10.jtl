@@ -1,0 +1,21 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1783835366838,1013,Autenticación,200,OK,Thread Group 1-2,text,true,,253,367,4,4,http://localhost:8069/jsonrpc,1006,0,1
+1783835366479,1371,Autenticación,200,OK,Thread Group 1-1,text,true,,253,367,4,4,http://localhost:8069/jsonrpc,1363,0,37
+1783835367335,773,Autenticación,200,OK,Thread Group 1-3,text,true,,253,367,4,4,http://localhost:8069/jsonrpc,772,0,2
+1783835367834,798,Autenticación,200,OK,Thread Group 1-4,text,true,,253,367,5,5,http://localhost:8069/jsonrpc,798,0,1
+1783835368333,823,Autenticación,200,OK,Thread Group 1-5,text,true,,253,367,6,6,http://localhost:8069/jsonrpc,823,0,2
+1783835368833,743,Autenticación,200,OK,Thread Group 1-6,text,true,,253,367,7,7,http://localhost:8069/jsonrpc,743,0,1
+1783835369157,924,Crear cotización,200,OK,Thread Group 1-5,text,true,,254,726,8,8,http://localhost:8069/jsonrpc,924,0,2
+1783835368109,1973,Crear cotización,200,OK,Thread Group 1-3,text,true,,254,726,8,8,http://localhost:8069/jsonrpc,1973,0,1
+1783835368633,1455,Crear cotización,200,OK,Thread Group 1-4,text,true,,254,726,6,6,http://localhost:8069/jsonrpc,1455,0,1
+1783835367888,2207,Crear cotización,200,OK,Thread Group 1-1,text,true,,254,726,5,5,http://localhost:8069/jsonrpc,2207,0,2
+1783835367888,2212,Crear cotización,200,OK,Thread Group 1-2,text,true,,254,726,4,4,http://localhost:8069/jsonrpc,2212,0,2
+1783835369332,772,Autenticación,200,OK,Thread Group 1-7,text,true,,253,367,3,3,http://localhost:8069/jsonrpc,772,0,2
+1783835369577,607,Crear cotización,200,OK,Thread Group 1-6,text,true,,254,726,3,3,http://localhost:8069/jsonrpc,606,0,1
+1783835370106,164,Crear cotización,200,OK,Thread Group 1-7,text,true,,254,726,2,2,http://localhost:8069/jsonrpc,164,0,2
+1783835369832,855,Autenticación,200,OK,Thread Group 1-8,text,true,,253,367,2,2,http://localhost:8069/jsonrpc,855,0,1
+1783835370689,129,Crear cotización,200,OK,Thread Group 1-8,text,true,,254,726,2,2,http://localhost:8069/jsonrpc,129,0,1
+1783835370332,680,Autenticación,200,OK,Thread Group 1-9,text,true,,253,367,2,2,http://localhost:8069/jsonrpc,680,0,1
+1783835370832,649,Autenticación,200,OK,Thread Group 1-10,text,true,,253,367,2,2,http://localhost:8069/jsonrpc,648,0,1
+1783835371013,561,Crear cotización,200,OK,Thread Group 1-9,text,true,,254,726,2,2,http://localhost:8069/jsonrpc,561,0,2
+1783835371482,344,Crear cotización,200,OK,Thread Group 1-10,text,true,,254,726,1,1,http://localhost:8069/jsonrpc,344,0,1
