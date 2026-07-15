@@ -15,12 +15,16 @@
     urlcolor=blue,
 }
 \usepackage{url}
-\geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=3cm}
+\usepackage{ragged2e}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% Ajuste de sangría para los párrafos
+\setlength{\parindent}{1cm}
 
 \begin{document}
 
 % ============================================
-% PORTADA (Ya la tienes, la incluyo por completitud)
+% PORTADA
 % ============================================
 \begin{titlepage}
     \centering
@@ -116,7 +120,13 @@ No se utilizaron instrumentos de indagación (encuestas, entrevistas) ya que las
 
 \subsection{Matriz de Requerimientos de Pruebas No Funcionales (MRP-NF)}
 
-\begin{longtable}{|p{1.2cm}|p{2cm}|p{2cm}|p{2.5cm}|p{4cm}|p{2.2cm}|p{2.5cm}|p{2.5cm}|p{1.5cm}|p{3cm}|}
+% Tabla más compacta con mejor distribución y alineada a la izquierda
+% Tabla 2.3 - Matriz de Requerimientos de Pruebas No Funcionales (MRP-NF)
+% Ajuste de columnas para mejor legibilidad y evitar texto cortado
+\setlength{\LTleft}{-2.1cm}
+\setlength{\LTright}{-0.5cm}
+\begin{footnotesize}
+\begin{longtable}{|p{0.7cm}|p{1.3cm}|p{1.3cm}|p{1.6cm}|p{2.8cm}|p{1.5cm}|p{1.6cm}|p{1.8cm}|p{1.0cm}|p{2.8cm}|}
 \hline
 \textbf{ID} & \textbf{Módulo} & \textbf{Factor} & \textbf{Criterio} & \textbf{Escenario} & \textbf{Herramienta} & \textbf{Métrica} & \textbf{Resultado Esperado} & \textbf{Estado} & \textbf{Resultado Obtenido} \\
 \hline
@@ -131,17 +141,19 @@ No se utilizaron instrumentos de indagación (encuestas, entrevistas) ya que las
 \hline
 \endlastfoot
 % ===== DATOS DE LA MATRIZ =====
-NF-01 & Ventas & Eficiencia & Tiempo de respuesta & Cargar módulo de Ventas con 10, 25 y 50 usuarios concurrentes & JMeter & Tiempo promedio de respuesta (ms) & < 3000 ms & Ok & 287.3 / 190.3 / 239.2 ms (todos < 3000 ms, 0\% error) \\
+NF-01 & Ventas & Eficiencia & Tiempo de respuesta & Cargar módulo de Ventas con 10, 25 y 50 usuarios concurrentes & JMeter & Tiempo promedio de respuesta (ms) & < 3000 ms & Ok & 287.3 / 190.3 / 239.2 ms (todos < 3000 ms) \\
 \hline
 NF-02 & Ventas & Eficiencia & Comportamiento bajo carga & Simular 10, 25 y 50 usuarios creando cotizaciones simultáneamente & JMeter & Tasa de error (\%) & 0\% & Ok & 0\% en 10, 25 y 50 usuarios \\
 \hline
-NF-03 & Productos & Eficiencia & Tiempo de respuesta de interfaz & Analizar el rendimiento de la página principal y módulo de Ventas & Lighthouse & Puntuación de Performance (0-100) & > 90 & NoK & 49/100 (FCP: 5.5s, LCP: 7.0s, TBT: 200ms, Speed Index: 5.5s) \\
+NF-03 & Productos & Eficiencia & Tiempo de respuesta de interfaz & Analizar el rendimiento de la página principal y módulo de Ventas & Lighthouse & Puntuación de Performance (0-100) & > 90 & NoK & 49/100 (FCP: 5.5s, LCP: 7.0s) \\
 \hline
-NF-04 & Productos & Seguridad & Control de acceso a productos & Intentar acceder al módulo de Productos con un usuario sin permisos (rol de solo lectura) & Manual (Odoo) & ¿El sistema bloquea el acceso? (Sí/No) & Acceso denegado & NoK & El sistema permitió editar el producto sin los permisos necesarios \\
+NF-04 & Productos & Seguridad & Control de acceso a productos & Intentar acceder al módulo de Productos con un usuario sin permisos & Manual (Odoo) & ¿El sistema bloquea el acceso? (Sí/No) & Acceso denegado & NoK & El sistema permitió editar el producto sin permisos \\
 \hline
-NF-05 & Productos & Seguridad & Control de permisos de edición & Intentar editar un producto con un usuario sin permisos de escritura & Manual (Odoo) & ¿El sistema bloquea la edición? (Sí/No) & Acción denegada (campos bloqueados) & NoK & El sistema permitió la edición y guardado del precio \\
+NF-05 & Productos & Seguridad & Control de permisos de edición & Intentar editar un producto con un usuario sin permisos de escritura & Manual (Odoo) & ¿El sistema bloquea la edición? (Sí/No) & Acción denegada & NoK & El sistema permitió la edición y guardado del precio \\
 \hline
 \end{longtable}
+\end{footnotesize}
+
 
 \subsection{Selección del Software de Automatización}
 
@@ -319,21 +331,31 @@ No Conformidades Detectadas & 3 \\
 
 \subsection{Reporte de No Conformidades}
 
-\begin{table}[H]
-\centering
-\caption{No Conformidades Detectadas}
-\begin{tabular}{|p{1.5cm}|p{2.5cm}|p{3.5cm}|p{3.5cm}|p{2.5cm}|p{2cm}|}
+% Tabla alineada a la izquierda
+\setlength{\LTleft}{-0.5cm}
+\begin{footnotesize}
+\begin{longtable}{|p{1.5cm}|p{2.2cm}|p{3.5cm}|p{3.5cm}|p{2.2cm}|p{1.8cm}|}
 \hline
 \textbf{ID} & \textbf{Dónde} & \textbf{Cuándo} & \textbf{Hallazgo} & \textbf{Se Espera} & \textbf{Severidad} \\
 \hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Dónde} & \textbf{Cuándo} & \textbf{Hallazgo} & \textbf{Se Espera} & \textbf{Severidad} \\
+\hline
+\endhead
+\hline
+\multicolumn{6}{r}{Continúa en la siguiente página}
+\endfoot
+\hline
+\endlastfoot
 NC-03 & Módulo de Productos & Al ejecutar Lighthouse en la página principal & Performance Score bajo (49/100), FCP 5.5s, LCP 7.0s & Performance Score > 90, tiempos de carga óptimos & Eficiencia (Rendimiento) \\
 \hline
 NC-04 & Módulo de Productos & Al intentar acceder con usuario sin permisos & El sistema permitió editar el producto sin permisos & El sistema debe bloquear el acceso a la edición & Seguridad \\
 \hline
 NC-05 & Módulo de Productos & Al intentar editar con usuario sin permisos de escritura & El sistema permitió la edición y guardado del precio & El sistema debe bloquear la edición de campos para usuarios sin permisos & Seguridad \\
 \hline
-\end{tabular}
-\end{table}
+\end{longtable}
+\end{footnotesize}
 
 \newpage
 
@@ -366,8 +388,18 @@ NC-05 & Módulo de Productos & Al intentar editar con usuario sin permisos de es
 % ============================================
 % 7. ANEXOS
 % ============================================
+\section{Anexos}
 
-A continuación, se listan los archivos complementarios que soportan las evidencias presentadas en este informe.
+\subsection*{Vídeo de la sustentaciòn}
+
+Sustentación 3 - Gr 05 Odoo: \\
+\url{https://drive.google.com/drive/folders/1ZyPmjTSLa6fedoYN6waQrFp-CG2fUgE6}
+
+
+\subsection*{Evidencias de ejecución}
+
+Las evidencias completas de la ejecución de las pruebas (capturas de pantalla, archivos de resultados de JMeter, planes de pruebas y reportes de Lighthouse) se encuentran disponibles en el siguiente enlace de Google Drive: \\
+\url{https://drive.google.com/drive/folders/10tl_H9OPyoKePTwzGfxYD34T-Jh30bEh}
 
 \subsection*{Repositorio de GitHub}
 

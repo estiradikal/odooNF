@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.28)  15 JUL 2026 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.28)  15 JUL 2026 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -275,7 +275,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip57
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
- (C:\Users\ESTIVEN MARTINEZ\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Users\ESTIVEN MARTINEZ\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip58
+\RaggedLeftLeftskip=\skip59
+\RaggedRightLeftskip=\skip60
+\CenteringRightskip=\skip61
+\RaggedLeftRightskip=\skip62
+\RaggedRightRightskip=\skip63
+\CenteringParfillskip=\skip64
+\RaggedLeftParfillskip=\skip65
+\RaggedRightParfillskip=\skip66
+\JustifyingParfillskip=\skip67
+\CenteringParindent=\skip68
+\RaggedLeftParindent=\skip69
+\RaggedRightParindent=\skip70
+\JustifyingParindent=\skip71
+) (C:\Users\ESTIVEN MARTINEZ\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count313
 ) (informe.aux
@@ -286,26 +302,26 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
  (C:\Users\ESTIVEN MARTINEZ\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count314
@@ -333,14 +349,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=443.57848pt
+* \textwidth=472.03123pt
 * \textheight=652.70622pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -369,7 +385,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (C:\Users\ESTIVEN MARTINEZ\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 24.
  (informe.out) (informe.out)
 \@outlinefile=\write3
 \openout3 = `informe.out'.
@@ -393,324 +409,478 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \newpage
+l.62 \newpage
               [1] [2]
-Overfull \hbox (11.80684pt too wide) in paragraph at lines 121--121
-[]|\OT1/cmr/bx/n/12 Herramienta| 
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]|\OT1/cmr/bx/n/10 M^^Sodu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
-[]|\OT1/cmr/bx/n/12 Resultado
+Overfull \hbox (20.83443pt too wide) in paragraph at lines 131--131
+[]|\OT1/cmr/bx/n/10 Herramienta| 
  []
 
 
-Overfull \hbox (346.61569pt too wide) in alignment at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]|\OT1/cmr/bx/n/10 Resultado
+ []
+
+
+Overfull \hbox (5.84009pt too wide) in paragraph at lines 131--131
+[]|\OT1/cmr/bx/n/10 Estado| 
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 131--132
+[]|\OT1/cmr/bx/n/10 Resultado Ob-
+ []
+
+
+Overfull \hbox (45.01723pt too wide) in alignment at lines 129--133
  [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.80684pt too wide) in paragraph at lines 125--125
-[]|\OT1/cmr/bx/n/12 Herramienta| 
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]|\OT1/cmr/bx/n/10 M^^Sodu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
-[]|\OT1/cmr/bx/n/12 Resultado
+Overfull \hbox (20.83443pt too wide) in paragraph at lines 135--135
+[]|\OT1/cmr/bx/n/10 Herramienta| 
  []
 
 
-Overfull \hbox (346.61569pt too wide) in alignment at lines 123--127
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+[]|\OT1/cmr/bx/n/10 Resultado
+ []
+
+
+Overfull \hbox (5.84009pt too wide) in paragraph at lines 135--135
+[]|\OT1/cmr/bx/n/10 Estado| 
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 135--136
+[]|\OT1/cmr/bx/n/10 Resultado Ob-
+ []
+
+
+Overfull \hbox (45.01723pt too wide) in alignment at lines 133--137
  [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (346.61569pt too wide) in alignment at lines 127--130
+Overfull \hbox (45.01723pt too wide) in alignment at lines 137--140
  [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (346.61569pt too wide) in alignment at lines 130--132
+Overfull \hbox (45.01723pt too wide) in alignment at lines 140--142
  [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
-[]|\OT1/cmr/m/n/12 Tiempo de
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 NF-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
-[]|\OT1/cmr/m/n/12 Cargar m^^Sodu-lo de
+Overfull \hbox (4.81697pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 Eficiencia| 
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 134--134
-[]|\OT1/cmr/m/n/12 Tiempo pro-
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 Tiempo
  []
 
 
-Underfull \hbox (badness 6078) in paragraph at lines 134--135
-\OT1/cmr/m/n/12 <3000 ms, 0$ $%
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/cmr/m/n/10 de res-
  []
 
 
-Overfull \hbox (15.68666pt too wide) in paragraph at lines 136--136
-[]|\OT1/cmr/m/n/12 Comportamiento
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10 Tiempo
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 136--136
-\OT1/cmr/m/n/12 usua-rios crean-do co-
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/cmr/m/n/10 pro-me-dio
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
-[]|\OT1/cmr/m/n/12 Tiempo de
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/cmr/m/n/10 de res-
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 138--138
-\OT1/cmr/m/n/12 res-pues-ta de
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/cmr/m/n/10 pues-ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
-[]|\OT1/cmr/m/n/12 Puntuaci^^Son
+Underfull \hbox (badness 2245) in paragraph at lines 144--145
+[]|\OT1/cmr/m/n/10 287.3 / 190.3 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
-\OT1/cmr/m/n/12 de Per-
+Underfull \hbox (badness 3019) in paragraph at lines 144--145
+\OT1/cmr/m/n/10 239.2 ms (to-dos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
-\OT1/cmr/m/n/12 for-man-ce
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 NF-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-[]|\OT1/cmr/m/n/12 49/100 (FCP:
+Overfull \hbox (4.81697pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 Eficiencia| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-\OT1/cmr/m/n/12 TBT: 200ms,
+Overfull \hbox (28.39227pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 Comportamiento
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 146.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 146.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/10 Tasa de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-\OT1/cmr/m/n/12 Speed In-dex:
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 NF-
  []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 140--140
-\OT1/cmr/m/n/12 ce-so a pro-
+Overfull \hbox (7.40033pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 Productos| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
-[]|\OT1/cmr/m/n/12 Intentar ac-ce-der al
+Overfull \hbox (4.81697pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 Eficiencia| 
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 140--140
-\OT1/cmr/m/n/12 con un usua-rio sin
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 Tiempo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
-[]|\OT1/cmr/m/n/12 Manual
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\OT1/cmr/m/n/10 de res-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
-[]|\OT1/cmr/m/n/12 ?`El sis-te-
+Underfull \hbox (badness 1184) in paragraph at lines 148--148
+\OT1/cmr/m/n/10 pues-ta de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
-\OT1/cmr/m/n/12 ma blo-quea
+Underfull \hbox (badness 4156) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 Analizar el ren-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
-\OT1/cmr/m/n/12 el ac-ce-so?
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\OT1/cmr/m/n/10 di-mien-to de la
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 140--140
-[]|\OT1/cmr/m/n/12 Acceso de-ne-
+Overfull \hbox (5.01543pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 Lighthouse| 
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 140--141
-\OT1/cmr/m/n/12 mi-ti^^So edi-tar el
+Overfull \hbox (4.33665pt too wide) in paragraph at lines 148--148
+[]|\OT1/cmr/m/n/10 Puntuaci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-[]|\OT1/cmr/m/n/12 Control de
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\OT1/cmr/m/n/10 de Per-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-\OT1/cmr/m/n/12 per-mi-sos de
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\OT1/cmr/m/n/10 for-man-ce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-[]|\OT1/cmr/m/n/12 Manual
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+[]|\OT1/cmr/m/n/10 49/100 (FCP:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-[]|\OT1/cmr/m/n/12 ?`El sis-te-
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 NF-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-\OT1/cmr/m/n/12 ma blo-quea
+Overfull \hbox (7.40033pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 Productos| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
-\OT1/cmr/m/n/12 la edi-ci^^Son?
+Overfull \hbox (6.37256pt too wide) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 Seguridad| 
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 142--142
-[]|\OT1/cmr/m/n/12 Acci^^Son de-ne-
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 ac-ce-so a
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 142--143
-\OT1/cmr/m/n/12 y guar-da-do del
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 Intentar ac-ce-der
  []
 
 
-Overfull \hbox (346.61569pt too wide) in alignment at lines 132--144
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 al m^^Sodu-lo de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 Pro-duc-tos con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 un usua-rio sin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 Manual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 ?`El sis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 te-ma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\OT1/cmr/m/n/10 blo-quea
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 150--150
+[]|\OT1/cmr/m/n/10 Acceso de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 NF-
+ []
+
+
+Overfull \hbox (7.40033pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 Productos| 
+ []
+
+
+Overfull \hbox (6.37256pt too wide) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 Seguridad| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 Control
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+\OT1/cmr/m/n/10 de per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+\OT1/cmr/m/n/10 mi-sos de
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 152--152
+\OT1/cmr/m/n/10 pro-duc-to con un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 Manual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 ?`El sis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+\OT1/cmr/m/n/10 te-ma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+\OT1/cmr/m/n/10 edi-ci^^Son?
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10 Acci^^Son de-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 152--153
+\OT1/cmr/m/n/10 ti^^So la edi-ci^^Son y
+ []
+
+
+Overfull \hbox (45.01723pt too wide) in alignment at lines 142--154
  [] [] [] [] [] [] [] [] [] [] 
  []
 
 [3] [4]
-Overfull \hbox (98.00316pt too wide) in paragraph at lines 181--182
+Overfull \hbox (80.37833pt too wide) in paragraph at lines 193--194
 []\OT1/cmr/bx/n/12 Evidencia: \OT1/cmr/m/n/12 Los re-sul-ta-dos de-ta-lla-dos se en-cuen-tran en los ar-chi-vos ane-xos \OT1/cmtt/m/n/12 resultados[]10[]ventas.jtl\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (79.47815pt too wide) in paragraph at lines 201--202
+Overfull \hbox (61.85332pt too wide) in paragraph at lines 213--214
 []\OT1/cmr/bx/n/12 Evidencia: \OT1/cmr/m/n/12 Los re-sul-ta-dos de-ta-lla-dos se en-cuen-tran en los ar-chi-vos ane-xos \OT1/cmtt/m/n/12 resultados[]api[]10.jtl\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (79.29204pt too wide) in paragraph at lines 224--225
+Overfull \hbox (61.6672pt too wide) in paragraph at lines 236--237
 []\OT1/cmr/bx/n/12 Evidencia: \OT1/cmr/m/n/12 El re-por-te com-ple-to de Lighthou-se se en-cuen-tra en el ane-xo \OT1/cmtt/m/n/12 reporte[]lighthouse.html\OT1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (74.52477pt too wide) in paragraph at lines 233--242
+Overfull \hbox (46.072pt too wide) in paragraph at lines 245--254
  [][] 
  []
 
 [5]
-Overfull \hbox (34.06888pt too wide) in paragraph at lines 244--245
+Overfull \hbox (16.44405pt too wide) in paragraph at lines 256--257
 []\OT1/cmr/bx/n/12 Evidencia: \OT1/cmr/m/n/12 La cap-tu-ra de pan-ta-lla se en-cuen-tra en el ane-xo \OT1/cmtt/m/n/12 NF-04-acceso-denegado.png\OT1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (11.07542pt too wide) in paragraph at lines 253--262
- [][] 
- []
-
-
-Overfull \hbox (46.41888pt too wide) in paragraph at lines 264--265
+Overfull \hbox (28.79405pt too wide) in paragraph at lines 276--277
 []\OT1/cmr/bx/n/12 Evidencia: \OT1/cmr/m/n/12 La cap-tu-ra de pan-ta-lla se en-cuen-tra en el ane-xo \OT1/cmtt/m/n/12 NF-05-campos-bloqueados.png\OT1/cmr/m/n/12 . 
  []
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-[]|\OT1/cmr/m/n/12 M^^Sodu-lo de
+Underfull \hbox (badness 10000) in alignment at lines 337--341
+ [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-[]|\OT1/cmr/m/n/12 Al eje-cu-tar
+Underfull \hbox (badness 10000) in alignment at lines 341--345
+ [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-\OT1/cmr/m/n/12 Lighthou-se en
+Underfull \hbox (badness 10000) in alignment at lines 345--348
+ [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-[]|\OT1/cmr/m/n/12 Performance
+Underfull \hbox (badness 10000) in alignment at lines 348--350
+ [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-\OT1/cmr/m/n/12 Sco-re >90,
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\OT1/cmr/m/n/10 M^^Sodu-lo de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-\OT1/cmr/m/n/12 tiem-pos de
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\OT1/cmr/m/n/10 Performance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-[]|\OT1/cmr/m/n/12 Eficiencia
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+\OT1/cmr/m/n/10 Sco-re >90,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-\OT1/cmr/m/n/12 (Ren-di-
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+\OT1/cmr/m/n/10 tiem-pos de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
-[]|\OT1/cmr/m/n/12 M^^Sodu-lo de
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
+[]|\OT1/cmr/m/n/10 Eficiencia
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 331--331
-\OT1/cmr/m/n/12 ac-ce-so a la
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
+\OT1/cmr/m/n/10 (Ren-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
-[]|\OT1/cmr/m/n/12 M^^Sodu-lo de
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
+[]|\OT1/cmr/m/n/10 M^^Sodu-lo de
  []
 
 
-Underfull \hbox (badness 1286) in paragraph at lines 333--333
-[]|\OT1/cmr/m/n/12 Al in-ten-tar edi-tar
+Underfull \hbox (badness 7433) in paragraph at lines 353--353
+[]|\OT1/cmr/m/n/10 El sis-te-ma per-mi-ti^^So
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
-[]|\OT1/cmr/m/n/12 El sis-te-ma
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
+[]|\OT1/cmr/m/n/10 El sis-te-ma
  []
 
 
-Underfull \hbox (badness 3039) in paragraph at lines 333--333
-\OT1/cmr/m/n/12 cam-pos pa-ra
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]|\OT1/cmr/m/n/10 M^^Sodu-lo de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
-\OT1/cmr/m/n/12 usua-rios sin
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+[]|\OT1/cmr/m/n/10 El sis-te-ma
  []
 
 
-Overfull \hbox (72.23915pt too wide) in paragraph at lines 325--336
- [][] 
+Underfull \hbox (badness 1178) in paragraph at lines 355--355
+\OT1/cmr/m/n/10 la edi-ci^^Son de
+ []
+
+
+Underfull \hbox (badness 8170) in paragraph at lines 355--355
+\OT1/cmr/m/n/10 cam-pos pa-ra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
+\OT1/cmr/m/n/10 usua-rios sin
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 350--357
+ [] [] [] [] [] [] 
  []
 
 [8] [9]
-Overfull \hbox (75.12178pt too wide) in paragraph at lines 379--381
+Overfull \hbox (46.66902pt too wide) in paragraph at lines 411--413
 [][]$\OT1/cmtt/m/n/12 https : / / docs . google . com / spreadsheets / d / 1THcPloRmVX _ CbkE1HrzkfvkAeIVdkhuUGCu59apmvMU /
  []
 
@@ -723,20 +893,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 11EB6E487069058CB53495BC45828555;6535.
+(rerunfilecheck)             Checksum: A11E7AEDEEBF8B017434C66A3CE51B75;6609.
  ) 
 Here is how much of TeX's memory you used:
- 12218 strings out of 467871
- 201063 string characters out of 5413016
- 642350 words of memory out of 5000000
- 40919 multiletter control sequences out of 15000+600000
- 632750 words of font info for 57 fonts, out of 8000000 for 9000
+ 12314 strings out of 467871
+ 203173 string characters out of 5413016
+ 643853 words of memory out of 5000000
+ 41007 multiletter control sequences out of 15000+600000
+ 633058 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,487b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on informe.pdf (11 pages, 115471 bytes).
+ 75i,11n,79p,487b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ESTIVEN MARTINEZ/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on informe.pdf (11 pages, 157596 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
