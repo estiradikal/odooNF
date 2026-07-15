@@ -1,0 +1,382 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+\usepackage{url}
+\geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=3cm}
+
+\begin{document}
+
+% ============================================
+% PORTADA (Ya la tienes, la incluyo por completitud)
+% ============================================
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    
+    {\Large \textbf{Universidad del Valle}}\\
+    {\Large Facultad de Ingeniería}\\
+    {\Large Escuela de Ingeniería de Sistemas y Computación}\\
+    {\Large Calidad de Productos de Software}\\
+    {\Large 750029C - 01}\\[2.5cm]
+    
+    {\LARGE \textbf{Sustentación 3}}\\[0.3cm]
+    {\Large Pruebas No Funcionales}\\[2cm]
+    
+    {\large \textbf{Integrantes:}}\\
+    \vspace{0.2cm}
+    Estiven Andrés Martinez Granados, 2179687\\
+    Juan David Loaiza Santiago, 2177570\\
+    Jose Otoniel Henao Montes, 2181039\\
+    Juan Sebastian Muñoz Rojas, 2177436\\
+    Julián David Rendón Cardona, 2177387\\[2cm]
+    
+    {\large \textbf{Profesora:}}\\
+    {\large Beatriz Eugenia Florián Gaviria}\\[2cm]
+    
+    {\large Santiago de Cali, \today}
+    
+    \vfill
+\end{titlepage}
+
+% ============================================
+% TABLA DE CONTENIDO
+% ============================================
+\tableofcontents
+\newpage
+
+% ============================================
+% 1. INTRODUCCIÓN
+% ============================================
+\section{Introducción}
+
+Este informe documenta la validación no funcional de la plataforma Odoo ERP \& CRM v19.0 Community, específicamente en los módulos de \textbf{Ventas} y \textbf{Productos}. Las pruebas se enfocan en dos factores de calidad: \textbf{Eficiencia} y \textbf{Seguridad}.
+
+Para la ejecución de las pruebas, se utilizaron herramientas como \textbf{Apache JMeter} para pruebas de carga, \textbf{Lighthouse} para análisis de rendimiento de interfaz, y pruebas \textbf{manuales en Odoo} para validar controles de acceso y permisos.
+
+El código fuente de las pruebas automatizadas se encuentra disponible en el repositorio de GitHub: \\
+\url{https://github.com/estiradikal/odooNF}
+
+\newpage
+
+% ============================================
+% 2. DISEÑO DE PRUEBAS NO FUNCIONALES
+% ============================================
+\section{Diseño de Pruebas No Funcionales}
+
+\subsection{Factores y Criterios de Calidad Seleccionados}
+
+Se seleccionaron los siguientes factores de calidad con sus respectivos criterios:
+
+\begin{table}[H]
+\centering
+\caption{Factores y criterios de calidad}
+\begin{tabular}{|p{4cm}|p{8cm}|}
+\hline
+\textbf{Factor de Calidad} & \textbf{Criterios de Calidad} \\
+\hline
+Eficiencia & Tiempo de respuesta, Comportamiento bajo carga, Tiempo de respuesta de interfaz \\
+\hline
+Seguridad & Control de acceso a productos, Control de permisos de edición \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Métricas e Instrumentos de Inspección e Indagación}
+
+\subsubsection{Métricas seleccionadas}
+\begin{itemize}
+    \item \textbf{Tiempo promedio de respuesta (ms):} Para medir el tiempo de carga del módulo de Ventas.
+    \item \textbf{Tasa de error (\%):} Para medir el comportamiento del sistema bajo carga.
+    \item \textbf{Puntuación de Performance (0-100):} Para medir el rendimiento de la interfaz con Lighthouse.
+    \item \textbf{¿El sistema bloquea el acceso/edición? (Sí/No):} Para evaluar controles de seguridad.
+\end{itemize}
+
+\subsubsection{Instrumentos de Inspección}
+\begin{itemize}
+    \item \textbf{JMeter:} Herramienta de código abierto para pruebas de carga y rendimiento. Se utilizó para simular usuarios concurrentes y medir tiempos de respuesta y tasa de error.
+    \item \textbf{Lighthouse:} Herramienta integrada en Chrome DevTools para analizar el rendimiento, accesibilidad y buenas prácticas de la interfaz web.
+    \item \textbf{Pruebas manuales en Odoo:} Para validar controles de acceso y permisos de seguridad.
+\end{itemize}
+
+\subsubsection{Instrumentos de Indagación}
+No se utilizaron instrumentos de indagación (encuestas, entrevistas) ya que las pruebas no funcionales realizadas son de naturaleza técnica y no requieren intervención de usuarios finales.
+
+\subsection{Matriz de Requerimientos de Pruebas No Funcionales (MRP-NF)}
+
+\begin{longtable}{|p{1.2cm}|p{2cm}|p{2cm}|p{2.5cm}|p{4cm}|p{2.2cm}|p{2.5cm}|p{2.5cm}|p{1.5cm}|p{3cm}|}
+\hline
+\textbf{ID} & \textbf{Módulo} & \textbf{Factor} & \textbf{Criterio} & \textbf{Escenario} & \textbf{Herramienta} & \textbf{Métrica} & \textbf{Resultado Esperado} & \textbf{Estado} & \textbf{Resultado Obtenido} \\
+\hline
+\endfirsthead
+\hline
+\textbf{ID} & \textbf{Módulo} & \textbf{Factor} & \textbf{Criterio} & \textbf{Escenario} & \textbf{Herramienta} & \textbf{Métrica} & \textbf{Resultado Esperado} & \textbf{Estado} & \textbf{Resultado Obtenido} \\
+\hline
+\endhead
+\hline
+\multicolumn{10}{r}{Continúa en la siguiente página}
+\endfoot
+\hline
+\endlastfoot
+% ===== DATOS DE LA MATRIZ =====
+NF-01 & Ventas & Eficiencia & Tiempo de respuesta & Cargar módulo de Ventas con 10, 25 y 50 usuarios concurrentes & JMeter & Tiempo promedio de respuesta (ms) & < 3000 ms & Ok & 287.3 / 190.3 / 239.2 ms (todos < 3000 ms, 0\% error) \\
+\hline
+NF-02 & Ventas & Eficiencia & Comportamiento bajo carga & Simular 10, 25 y 50 usuarios creando cotizaciones simultáneamente & JMeter & Tasa de error (\%) & 0\% & Ok & 0\% en 10, 25 y 50 usuarios \\
+\hline
+NF-03 & Productos & Eficiencia & Tiempo de respuesta de interfaz & Analizar el rendimiento de la página principal y módulo de Ventas & Lighthouse & Puntuación de Performance (0-100) & > 90 & NoK & 49/100 (FCP: 5.5s, LCP: 7.0s, TBT: 200ms, Speed Index: 5.5s) \\
+\hline
+NF-04 & Productos & Seguridad & Control de acceso a productos & Intentar acceder al módulo de Productos con un usuario sin permisos (rol de solo lectura) & Manual (Odoo) & ¿El sistema bloquea el acceso? (Sí/No) & Acceso denegado & NoK & El sistema permitió editar el producto sin los permisos necesarios \\
+\hline
+NF-05 & Productos & Seguridad & Control de permisos de edición & Intentar editar un producto con un usuario sin permisos de escritura & Manual (Odoo) & ¿El sistema bloquea la edición? (Sí/No) & Acción denegada (campos bloqueados) & NoK & El sistema permitió la edición y guardado del precio \\
+\hline
+\end{longtable}
+
+\subsection{Selección del Software de Automatización}
+
+El software seleccionado para automatizar el proceso de pruebas es:
+
+\begin{itemize}
+    \item \textbf{Apache JMeter:} Para pruebas de carga y rendimiento (NF-01 y NF-02).
+    \item \textbf{Lighthouse:} Para análisis de rendimiento de interfaz (NF-03).
+    \item \textbf{Odoo (Manual):} Para pruebas de seguridad (NF-04 y NF-05).
+\end{itemize}
+
+\newpage
+
+% ============================================
+% 3. EJECUCIÓN DE PRUEBAS Y EVIDENCIAS
+% ============================================
+\section{Ejecución de Pruebas y Evidencias}
+
+\subsection{NF-01: Tiempo de respuesta del módulo Ventas}
+
+Se utilizó JMeter con un Thread Group configurado para 10, 25 y 50 usuarios concurrentes. La URL probada fue \texttt{http://localhost:8069/odoo/sales}.
+
+\begin{table}[H]
+\centering
+\caption{Resultados NF-01}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Usuarios} & \textbf{Avg (ms)} & \textbf{Min (ms)} & \textbf{Max (ms)} & \textbf{Error \%} \\
+\hline
+10 & 287.3 & 115 & 1309 & 0\% \\
+25 & 190.3 & 104 & 391 & 0\% \\
+50 & 239.2 & 104 & 735 & 0\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Evidencia:} Los resultados detallados se encuentran en los archivos anexos \texttt{resultados\_10\_ventas.jtl}, \texttt{resultados\_25\_ventas.jtl} y \texttt{resultados\_50\_ventas.jtl}.
+
+\subsection{NF-02: Comportamiento bajo carga en cotizaciones}
+
+Se utilizó JMeter para simular la creación de cotizaciones a través de la API JSON-RPC de Odoo.
+
+\begin{table}[H]
+\centering
+\caption{Resultados NF-02}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Usuarios} & \textbf{Avg (ms)} & \textbf{Tasa de error (\%)} \\
+\hline
+10 & 1058 & 0\% \\
+25 & 144 & 0\% \\
+50 & 116 & 0\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Evidencia:} Los resultados detallados se encuentran en los archivos anexos \texttt{resultados\_api\_10.jtl}, \texttt{resultados\_api\_25.jtl} y \texttt{resultados\_api\_50.jtl}.
+
+\subsection{NF-03: Análisis de rendimiento con Lighthouse}
+
+Se ejecutó Lighthouse en la página principal de Odoo (\texttt{http://localhost:8069}).
+
+\begin{table}[H]
+\centering
+\caption{Resultados NF-03}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Métrica} & \textbf{Resultado} \\
+\hline
+Performance Score & 49/100 \\
+FCP & 5.5 s \\
+LCP & 7.0 s \\
+TBT & 200 ms \\
+CLS & 0 \\
+Speed Index & 5.5 s \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Evidencia:} El reporte completo de Lighthouse se encuentra en el anexo \texttt{reporte\_lighthouse.html}.
+
+\subsection{NF-04: Control de acceso a productos}
+
+Se creó un usuario con permisos limitados y se intentó acceder al módulo de Productos.
+
+\begin{table}[H]
+\centering
+\caption{Resultados NF-04}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Métrica} & \textbf{Resultado} \\
+\hline
+¿El sistema bloquea el acceso? & No \\
+\hline
+Resultado & El sistema permitió editar el producto sin los permisos necesarios \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Evidencia:} La captura de pantalla se encuentra en el anexo \texttt{NF-04-acceso-denegado.png}.
+
+\subsection{NF-05: Control de permisos de edición}
+
+Se creó un usuario con permisos de solo lectura y se intentó editar un producto.
+
+\begin{table}[H]
+\centering
+\caption{Resultados NF-05}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Métrica} & \textbf{Resultado} \\
+\hline
+¿El sistema bloquea la edición? & No \\
+\hline
+Resultado & El sistema permitió la edición y guardado del precio \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Evidencia:} La captura de pantalla se encuentra en el anexo \texttt{NF-05-campos-bloqueados.png}.
+
+\newpage
+
+% ============================================
+% 4. ANÁLISIS DE RESULTADOS
+% ============================================
+\section{Análisis de Resultados}
+
+\subsection{Evaluación e interpretación de las métricas}
+
+\subsubsection{NF-01: Tiempo de respuesta}
+
+Los tiempos promedio de respuesta para cargar el módulo de Ventas fueron de \textbf{287.3 ms} (10 usuarios), \textbf{190.3 ms} (25 usuarios) y \textbf{239.2 ms} (50 usuarios). Todos los valores están muy por debajo del umbral de 3000 ms, lo que indica un rendimiento excelente. La tasa de error fue del 0\% en todos los casos.
+
+\subsubsection{NF-02: Comportamiento bajo carga}
+
+La tasa de error fue del 0\% en todos los escenarios. El tiempo promedio de creación de cotizaciones vía API fue de \textbf{1058 ms} (10 usuarios), \textbf{144 ms} (25 usuarios) y \textbf{116 ms} (50 usuarios). El sistema es estable y eficiente bajo carga moderada. El rendimiento mejora al aumentar la carga, lo que sugiere que el sistema aprovecha mejor los recursos con más conexiones.
+
+\subsubsection{NF-03: Rendimiento de interfaz}
+
+Lighthouse reportó una puntuación de \textbf{49/100} en Performance, lo que indica que la interfaz de Odoo tiene problemas de optimización. Los tiempos de carga (LCP: 7.0s, FCP: 5.5s) son excesivamente altos y afectan negativamente la experiencia del usuario.
+
+\subsubsection{NF-04: Control de acceso}
+
+El sistema permitió a un usuario sin permisos editar un producto. Esto representa una vulnerabilidad de seguridad que debe ser corregida.
+
+\subsubsection{NF-05: Control de permisos de edición}
+
+El sistema permitió la edición y guardado del precio de un producto a un usuario sin permisos de escritura. Esta es una vulnerabilidad de seguridad grave que afecta la integridad de los datos.
+
+\newpage
+
+% ============================================
+% 5. REPORTE DE NO CONFORMIDADES
+% ============================================
+\section{Reporte de No Conformidades}
+
+\subsection{Resumen de ejecución}
+
+\begin{table}[H]
+\centering
+\caption{Resumen de ejecución}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Métrica de Ejecución} & \textbf{Cantidad} \\
+\hline
+Total de Requerimientos de Prueba Diseñados & 5 \\
+Total de Requerimientos Ejecutados & 5 \\
+Requerimientos Exitosos (Ok) & 2 \\
+Requerimientos con Fallos (NoK) & 3 \\
+No Conformidades Detectadas & 3 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Reporte de No Conformidades}
+
+\begin{table}[H]
+\centering
+\caption{No Conformidades Detectadas}
+\begin{tabular}{|p{1.5cm}|p{2.5cm}|p{3.5cm}|p{3.5cm}|p{2.5cm}|p{2cm}|}
+\hline
+\textbf{ID} & \textbf{Dónde} & \textbf{Cuándo} & \textbf{Hallazgo} & \textbf{Se Espera} & \textbf{Severidad} \\
+\hline
+NC-03 & Módulo de Productos & Al ejecutar Lighthouse en la página principal & Performance Score bajo (49/100), FCP 5.5s, LCP 7.0s & Performance Score > 90, tiempos de carga óptimos & Eficiencia (Rendimiento) \\
+\hline
+NC-04 & Módulo de Productos & Al intentar acceder con usuario sin permisos & El sistema permitió editar el producto sin permisos & El sistema debe bloquear el acceso a la edición & Seguridad \\
+\hline
+NC-05 & Módulo de Productos & Al intentar editar con usuario sin permisos de escritura & El sistema permitió la edición y guardado del precio & El sistema debe bloquear la edición de campos para usuarios sin permisos & Seguridad \\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+% ============================================
+% 6. LECCIONES APRENDIDAS
+% ============================================
+\section{Lecciones Aprendidas}
+
+\subsection{Aspectos Positivos (a repetir)}
+
+\begin{itemize}
+    \item La automatización con \textbf{JMeter} permitió simular carga de manera eficiente y repetible, facilitando la obtención de métricas precisas.
+    \item \textbf{Lighthouse} proporcionó métricas claras y útiles para identificar problemas de rendimiento en la interfaz.
+    \item El entorno \textbf{Docker} garantizó la reproducibilidad de las pruebas y un ambiente controlado.
+    \item La estructura de la matriz de requerimientos (MRP-NF) permitió una trazabilidad clara de cada caso de prueba.
+\end{itemize}
+
+\subsection{Aspectos a Mejorar}
+
+\begin{itemize}
+    \item Configurar JMeter para manejar autenticación y sesiones de forma más robusta en pruebas de API.
+    \item Incluir más pruebas de seguridad con roles intermedios y permisos granulares para identificar todas las vulnerabilidades.
+    \item Realizar pruebas con cargas superiores a 100 usuarios para identificar el límite de escalabilidad del sistema.
+    \item Optimizar el frontend de Odoo para reducir los tiempos de carga y mejorar la experiencia del usuario.
+    \item Revisar la configuración de permisos y roles en Odoo para garantizar que los usuarios con permisos limitados no puedan modificar información sensible.
+\end{itemize}
+
+\newpage
+
+% ============================================
+% 7. ANEXOS
+% ============================================
+
+A continuación, se listan los archivos complementarios que soportan las evidencias presentadas en este informe.
+
+\subsection*{Repositorio de GitHub}
+
+El código fuente de las pruebas automatizadas y los planes de JMeter se encuentran disponibles en el repositorio de GitHub: \\
+\url{https://github.com/estiradikal/odooNF}
+
+\subsection*{Matriz de Requerimientos de Pruebas en Excel}
+
+La matriz de requerimientos de pruebas no funcionales (MRP-NF) con todos los casos diseñados y resultados obtenidos se encuentra disponible en el siguiente enlace de Google Sheets: \\
+\url{https://docs.google.com/spreadsheets/d/1THcPloRmVX_CbkE1HrzkfvkAeIVdkhuUGCu59apmvMU/edit?gid=1160611668#gid=1160611668}
+
+\end{document}
